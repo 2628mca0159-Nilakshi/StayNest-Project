@@ -1,0 +1,232 @@
+/* StayNest - simple stylesheet */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #1e3a8a;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background-color: #2563eb;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a {
+    padding-bottom: 3px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    border-bottom: 2px solid white;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* ---------- Button ---------- */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.gray {
+    background-color: #f3f4f6;
+}
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 230px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.box:hover {
+    border-color: #2563eb;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+/* ---------- PG List ---------- */
+.pg-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px 50px 20px;
+}
+
+.pg-card {
+    width: 290px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.pg-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pg-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.pg-card h3 {
+    margin: 12px 0 8px 0;
+}
+
+.pg-card p {
+    margin: 4px 0;
+}
+
+.pg-card .btn {
+    margin-top: 12px;
+}
+
+/* ---------- PG Details ---------- */
+.details {
+    max-width: 520px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.details img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.details h1 {
+    margin-bottom: 10px;
+}
+
+.details .btn {
+    margin-top: 15px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 10px 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .pg-card,
+    .box {
+        width: 100%;
+    }
+}
